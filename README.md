@@ -5,12 +5,17 @@ websocket is a websocket command line websocket client designed for exploring an
 ## Installation
 
 ```bash
+
 go get -u -v hidevopsio/websocket
+
+```
 
 ## Usage
 
 type `websocket -h` for help
 
 ```bash
+
 websocket -h
+
 ```
