@@ -1,3 +1,6 @@
+
+//go:generate go build -o websocket
+
 package main
 
 import (
