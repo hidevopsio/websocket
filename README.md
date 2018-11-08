@@ -6,7 +6,7 @@ websocket is a websocket command line websocket client designed for exploring an
 
 ```bash
 
-go get -u -v hidevopsio/websocket
+go get -u -v hidevops.io/websocket
 
 ```
 
@@ -19,3 +19,5 @@ type `websocket -h` for help
 websocket -h
 
 ```
+
+

@@ -39,7 +39,7 @@
 
 [[constraint]]
   name = "hidevops.io/hiboot"
-  version = "0.10.3"
+  version = "0.10.4"
 
 [prune]
   go-tests = true

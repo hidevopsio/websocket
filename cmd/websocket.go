@@ -9,7 +9,7 @@ import (
 	"io"
 	"os/user"
 	"github.com/chzyer/readline"
-	"hidevops.io/websocket-cli/ws"
+	"hidevops.io/websocket/ws"
 )
 
 const version = "1.0.0"

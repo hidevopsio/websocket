@@ -371,7 +371,7 @@
   revision = "5420a8b6744d3b0345ab293f6fcba19c978f1183"
 
 [[projects]]
-  digest = "1:a22f5e194797727f21972dc4f373e18abe35a6b8c593ba175be6bc4d0a269f59"
+  digest = "1:8b46a5039b32b505c52897e561560afcd4848a2ed25f47695dd07a5d6283abc7"
   name = "hidevops.io/hiboot"
   packages = [
     "pkg/app",
@@ -394,8 +394,8 @@
     "pkg/utils/str",
   ]
   pruneopts = "UT"
-  revision = "bd31f4f72db21e8a4a2f77c9fae805d6f1e905cc"
-  version = "v0.10.3"
+  revision = "c2f599ececde79b007240a332a2aaebf94168e4e"
+  version = "v0.10.4"
 
 [solve-meta]
   analyzer-name = "dep"
