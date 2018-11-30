@@ -28,17 +28,16 @@ func NewWebsocketCommand() *websocketCommand  {
 	c.Use = "ws"
 	c.Short = "websocket"
 	c.Long = "websocket command line client "
-
-	c.PersistentFlags().StringVarP(&c.token, "token", "t", "", "token. e.g. --token=the-token-string")
-	c.PersistentFlags().StringVarP(&c.url, "url", "u", "", "websocket origin. e.g. --token=the-token-string")
-	c.PersistentFlags().BoolVarP(&c.version, "version", "v", false, "print version, e.g. websocket version or websocket -v websocket --version")
+	options := c.PersistentFlags()
+	options.StringVarP(&c.token, "token", "t", "", "token. e.g. --token=the-token-string")
+	options.StringVarP(&c.url, "url", "u", "", "websocket origin. e.g. --token=the-token-string")
+	options.BoolVarP(&c.version, "version", "v", false, "print version, e.g. websocket version or websocket -v websocket --version")
 	return c
 }
 
 
-
 func (c *websocketCommand) OnVersion(args []string) bool {
-	fmt.Printf("websocket-cli v%s\n", version)
+	fmt.Printf("websocket v%s\n", version)
 	return false
 }
 

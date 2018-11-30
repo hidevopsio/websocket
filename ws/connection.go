@@ -20,14 +20,14 @@ type session struct {
 	errChan chan error
 }
 
-func Connect(url, origin, auth string, rlConf *readline.Config) error {
+func Connect(originUrl, origin, auth string, rlConf *readline.Config) error {
 	headers := make(http.Header)
 	headers.Add("Origin", origin)
-	if auth != "" {
+	if auth[7:] != "" {
 		headers.Add("Authorization", auth)
 	}
 
-	ws, _, err := websocket.DefaultDialer.Dial(url, headers)
+	ws, _, err := websocket.DefaultDialer.Dial(originUrl, headers)
 	if err != nil {
 		return err
 	}
