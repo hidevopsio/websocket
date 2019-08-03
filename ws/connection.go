@@ -87,6 +87,8 @@ func (s *session) readWebsocket() {
 			text = string(buf)
 		case websocket.BinaryMessage:
 			text = bytesToFormattedHex(buf)
+		case websocket.CloseMessage:
+			s.errChan <-fmt.Errorf("websocket is closed")
 		default:
 			s.errChan <- fmt.Errorf("unknown websocket frame type: %d", msgType)
 			return
